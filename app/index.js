@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import { View, StyleSheet, Alert } from 'react-native';
-import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
-import params from '../../constants/Params';
-import MineField from '../../components/MineField';
-import Header from '../../components/Header';
-import LevelSelection from '../../components/screens/LevelSelection';
+import params from '../constants/Params';
+import MineField from '../components/MineField';
+import Header from '../components/Header';
+import LevelSelection from '../components/screens/LevelSelection';
 import { 
   createMinedBoard,
   cloneBoard,
@@ -15,7 +14,7 @@ import {
   showMines, 
   invertFlag,
   flagsUsed
-} from '../../constants/functions';
+} from '../constants/functions';
 
 export default class HomeScreen extends Component {
 
